@@ -9,9 +9,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var trafficLight: UIStackView!
+    @IBOutlet weak var button: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        trafficLight.viewWithTag(1)?.alpha = 0.3
+        trafficLight.viewWithTag(2)?.alpha = 0.3
+        trafficLight.viewWithTag(3)?.alpha = 0.3
+        
     }
 
 
